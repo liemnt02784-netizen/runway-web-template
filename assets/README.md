@@ -3,13 +3,23 @@
 Toàn bộ hình ảnh được phép dùng cho cuộc thi nằm trong các thư mục dưới đây.
 
 ```
-logo/     Logo Runway, logo GDG on Campus (ưu tiên .svg, kèm .png nền trong suốt)
-          Nên có cả bản logo trắng để đặt trên nền tối.
-images/   Ảnh hoạt động, ảnh nền, ảnh ban chủ nhiệm
-icons/    Icon nhỏ, favicon.png
-fonts/    File font nếu không lấy được từ Google Fonts
-videos/   Clip hoạt động CLB, dùng làm nền hero hoặc chèn giới thiệu (không bắt buộc dùng)
+logo/      Logo Runway, GDG on Campus, Khoa Công nghệ HSU
+images/    Ảnh hoạt động CLB (Welcome Day, DevFest, Build with AI...)
+icons/     Icon nhỏ, favicon
+stickers/  File bế sticker các ban trong CLB, icon công nghệ (bản in ấn)
+fonts/     File font nếu không lấy được từ Google Fonts
+videos/    Clip hoạt động CLB, dùng làm nền hero hoặc chèn giới thiệu (không bắt buộc dùng)
 ```
+
+## Ảnh có sẵn trong `images/`
+
+| File | Nội dung |
+|---|---|
+| `event-welcome-day.jpg` | Chụp nhóm ngày Welcome sinh viên |
+| `event-devfest-2025.jpg` | DevFest 2025 tại HSU |
+| `event-build-with-ai-2026.jpg` | Build with AI 2026 |
+| `talk-kinh-nghiem-ca-nhan.jpg` | Diễn giả chia sẻ trên sân khấu |
+| `audience-applause.jpg` | Khán giả vỗ tay trong hội trường |
 
 ## Quy ước đặt tên
 
