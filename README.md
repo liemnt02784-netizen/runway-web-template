@@ -6,24 +6,20 @@ Repo này **không phải web mẫu**, cũng không hướng dẫn bạn làm th
 
 ## Lấy kit về
 
-Bấm **Use this template → Create a new repository**, hoặc:
-
-```bash
-git clone https://github.com/<to-chuc>/runway-web-template.git my-club-site
-cd my-club-site
-rm -rf .git && git init
-```
+Bấm **Use this template → Create a new repository** trên trang repo này để có bản riêng của bạn.
 
 ## Trong kit có gì
 
 ```
-assets/logo/     Logo Runway, GDG on Campus, Khoa Công nghệ HSU (PNG nền trong suốt)
-assets/images/   Ảnh hoạt động (thả thêm sau)
-assets/icons/    Icon, favicon
-assets/fonts/    Font nếu không lấy được từ Google Fonts
-BRAND.md         Mã màu, font, quy tắc dùng logo
-CONTENT.md       Nội dung chữ chuẩn về CLB
-index.html       File trống để bắt đầu, xóa thoải mái
+assets/logo/      Logo Runway, GDG on Campus, Khoa Công nghệ HSU
+assets/images/    Ảnh hoạt động CLB
+assets/icons/     Icon, favicon
+assets/stickers/  File bế sticker (bản in ấn)
+assets/videos/    Clip hoạt động CLB
+assets/fonts/     Chỉ dùng nếu không lấy được font từ Google Fonts
+BRAND.md          Mã màu, font, quy tắc dùng logo
+CONTENT.md        Nội dung chữ chuẩn về CLB
+index.html        File trống để bắt đầu, xóa thoải mái
 ```
 
 ## Hai điều bắt buộc
