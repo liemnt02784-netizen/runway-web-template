@@ -7,7 +7,7 @@ logo/      Logo Runway, GDG on Campus, Khoa Công nghệ HSU
 images/    Ảnh hoạt động CLB (Welcome Day, DevFest, Build with AI...)
 icons/     Icon nhỏ, favicon
 stickers/  File bế sticker các ban trong CLB, icon công nghệ (bản in ấn)
-fonts/     File font nếu không lấy được từ Google Fonts
+fonts/     Dự phòng (font Maven Pro lấy từ Google Fonts, không cần file)
 videos/    Clip hoạt động CLB, dùng làm nền hero hoặc chèn giới thiệu (không bắt buộc dùng)
 ```
 

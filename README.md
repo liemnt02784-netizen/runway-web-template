@@ -16,7 +16,7 @@ assets/images/    Ảnh hoạt động CLB
 assets/icons/     Icon, favicon
 assets/stickers/  File bế sticker (bản in ấn)
 assets/videos/    Clip hoạt động CLB
-assets/fonts/     Chỉ dùng nếu không lấy được font từ Google Fonts
+assets/fonts/     Dự phòng, font lấy từ Google Fonts nên thường để trống
 BRAND.md          Mã màu, font, quy tắc dùng logo
 CONTENT.md        Nội dung chữ chuẩn về CLB
 index.html        File trống để bắt đầu, xóa thoải mái

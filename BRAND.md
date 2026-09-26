@@ -52,14 +52,30 @@ Gradient của logo đi theo hướng chéo từ trên xuống dưới. Khi làm
 
 ## Font
 
-| Vai trò | Font | Ghi chú |
+Font chữ riêng của **Runway** là **Maven Pro**. Khi làm trang theo thương hiệu GDG on Campus thì dùng font của Google.
+
+| Thương hiệu | Font | Nguồn |
 |---|---|---|
-| Tiêu đề | **Poppins** hoặc **Google Sans** | Chữ trong logo là kiểu geometric sans, Poppins gần nhất |
-| Nội dung | **Inter** hoặc **Roboto** | Hỗ trợ tiếng Việt đầy đủ |
+| **Runway** | **Maven Pro** | Google Fonts, miễn phí (giấy phép OFL) |
+| GDG on Campus | **Google Sans** (hoặc Poppins nếu không có) | Google Fonts |
+
+Nội dung dài (đoạn văn) có thể dùng **Inter** hoặc **Roboto** cho dễ đọc, ở cả hai thương hiệu.
+
+Nhúng font Runway (Maven Pro):
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
+
+```css
+font-family: "Maven Pro", system-ui, sans-serif;
+```
+
+Font Google cho GDG on Campus và nội dung:
+
+```html
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 ```
 
