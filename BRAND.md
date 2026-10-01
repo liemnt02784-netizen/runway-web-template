@@ -1,6 +1,8 @@
-# Bộ nhận diện thương hiệu
+# Bộ nhận diện: GDG on Campus HSU × Runway Club
 
 ## Màu
+
+Kit có **hai bộ màu đi cùng nhau**: 4 màu Google cho GDG on Campus HSU, và gradient xanh cho Runway Club. Trang của bạn dùng cả hai.
 
 Logo Runway là một dải gradient xanh, chạy từ xanh tím ở trên xuống xanh da trời ở dưới. Các mã dưới đây lấy trực tiếp từ file logo gốc.
 
@@ -14,7 +16,7 @@ Logo Runway là một dải gradient xanh, chạy từ xanh tím ở trên xuố
 | Nền sáng | `#FFFFFF` | Nền mặc định |
 | Nền tối | `#0F1115` | Dark mode |
 
-Màu Google, dùng khi nhắc tới GDG on Campus:
+Màu Google, dùng cho phần GDG on Campus HSU và các điểm nhấn chung:
 
 | Màu | Mã |
 |---|---|
@@ -50,36 +52,35 @@ Dán vào CSS:
 
 Gradient của logo đi theo hướng chéo từ trên xuống dưới. Khi làm nền hoặc nút bấm, giữ đúng hướng đó cho đồng bộ với logo.
 
-## Font
+## Font: mỗi CLB một font, dùng chung trên một trang
 
-Font chữ riêng của **Runway** là **Maven Pro**. Khi làm trang theo thương hiệu GDG on Campus thì dùng font của Google.
+Trang web giới thiệu **cả hai CLB cùng lúc**, nên giữ font riêng của từng bên:
 
-| Thương hiệu | Font | Nguồn |
+| Thương hiệu | Font | Dùng ở đâu |
 |---|---|---|
-| **Runway** | **Maven Pro** | Google Fonts, miễn phí (giấy phép OFL) |
-| GDG on Campus | **Google Sans** (hoặc Poppins nếu không có) | Google Fonts |
+| **GDG on Campus HSU** | **Google Sans** | Khi nói về GDG on Campus HSU |
+| **Runway Club** | **Maven Pro** | Khi nói về Runway Club, slogan *New Journey – New Challenges* |
 
-Nội dung dài (đoạn văn) có thể dùng **Inter** hoặc **Roboto** cho dễ đọc, ở cả hai thương hiệu.
-
-Nhúng font Runway (Maven Pro):
+Cả hai đều có trên Google Fonts, miễn phí và **đủ dấu tiếng Việt**. Nhúng một lần cho cả hai:
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
 ```
 
 ```css
-font-family: "Maven Pro", system-ui, sans-serif;
+:root {
+  --font-gdg:    "Google Sans", system-ui, sans-serif;
+  --font-runway: "Maven Pro", system-ui, sans-serif;
+}
 ```
 
-Font Google cho GDG on Campus và nội dung:
+Luôn kiểm tra font hiển thị đúng dấu: **ê ệ ữ ỳ ọ ậ**. Nếu chữ nào nhảy sang font khác là link font bị sai.
 
-```html
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-```
+## Kết hợp hai CLB trên một trang
 
-Luôn kiểm tra font hiển thị đúng dấu tiếng Việt: **ê ệ ữ ỳ ọ ậ**. Nhiều font đẹp nhưng thiếu dấu, chữ sẽ nhảy sang font khác trông rất lộ.
+Trang của bạn giới thiệu **cả GDG on Campus HSU lẫn Runway Club**. Hãy kết hợp hai bộ nhận diện (logo, màu, font) của hai CLB lại với nhau **sáng tạo nhất có thể**. Kết hợp thế nào là do bạn.
 
 ## Logo có sẵn
 
@@ -98,6 +99,81 @@ Tất cả nằm trong `assets/logo/`.
 | `logo-hsu-congnghe-white-vi.png` | Khoa Công nghệ HSU, tiếng Việt, nền tối |
 | `logo-hsu-fit-blue-en.png` | Faculty of Information Technology, tiếng Anh |
 
+## Icon
+
+Icon nằm trong `assets/icons/`, tất cả là SVG một màu dùng `currentColor`, nên **đổi màu bằng CSS `color`**.
+
+| Thư mục | Có gì | Nguồn & giấy phép |
+|---|---|---|
+| `icons/ui/` | 67 icon giao diện: menu, close, arrow-right, calendar, clock, place, email, groups, school, code, rocket, trophy, discord-style chat... | Material Design Icons (Google), Apache 2.0 |
+| `icons/social/` | facebook, messenger, instagram, discord, github, youtube, tiktok, zalo, gmail | Simple Icons, CC0 |
+| `icons/tech/` | flutter, dart, firebase, android, kotlin, go, kubernetes, angular, google-cloud, gemini, tensorflow, chrome, html5, css, javascript, typescript, python, git, figma, vercel, netlify | Simple Icons, CC0 |
+
+Cách 1, chèn thẳng SVG để đổi màu theo chữ (mở file .svg, copy nội dung dán vào HTML):
+
+```html
+<a class="social" href="https://discord.gg/...">
+  <svg viewBox="0 0 24 24" fill="currentColor">...</svg> Discord
+</a>
+```
+```css
+.social { color: var(--runway-deep); }
+.social svg { width: 24px; height: 24px; }
+```
+
+Cách 2, dùng như ảnh (giữ màu đen mặc định, nhanh nhất):
+
+```html
+<img src="assets/icons/ui/calendar.svg" alt="" width="24" height="24">
+```
+
+Cách 3, dùng làm mask để tô màu bất kỳ mà không cần chèn SVG:
+
+```css
+.icon { width: 24px; height: 24px; background: var(--google-blue);
+        -webkit-mask: url(assets/icons/ui/place.svg) center/contain no-repeat;
+                mask: url(assets/icons/ui/place.svg) center/contain no-repeat; }
+```
+
+Icon trong kit là icon trung tính, dùng được cho trang của cả GDG on Campus HSU lẫn Runway Club.
+
+Logo công nghệ **bản màu gốc** (để làm mục "Công nghệ chúng mình dùng") nằm ở `assets/tech-logos/`. Logo thương hiệu thuộc về chủ sở hữu, chỉ dùng để nhắc tới công nghệ đó, không sửa màu hay hình.
+
+## Hình trang trí
+
+`assets/decor/` có các hình theo phong cách Google: `circle`, `ring`, `half-circle`, `quarter`, `star`, `plus`, `dots`, `squiggle`, `zigzag`, `brackets` ở cả 4 màu (`-blue`, `-red`, `-yellow`, `-green`) và `google-bar.svg` (thanh 4 màu). Dùng làm điểm nhấn ở góc section, sau ảnh, cạnh tiêu đề. Đừng rải quá nhiều, 2–3 hình mỗi màn hình là vừa.
+
+```html
+<img class="deco" src="assets/decor/squiggle-yellow.svg" alt="" aria-hidden="true">
+```
+```css
+.hero { position: relative; }
+.deco { position: absolute; top: 24px; right: 5%; width: 120px; pointer-events: none; }
+```
+
+## Favicon và ảnh chia sẻ link
+
+```html
+<!-- chọn MỘT bộ: gdg/ (GDG on Campus HSU) hoặc runway/ (Runway Club) -->
+<link rel="icon" href="assets/favicon/gdg/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/favicon/gdg/apple-touch-icon.png">
+<meta property="og:title" content="GDG on Campus HSU × Runway Club">
+<meta property="og:description" content="One community for IT students at Hoa Sen University.">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+```
+
+Khi deploy, đổi đường dẫn `og:image` thành link đầy đủ (bắt đầu bằng `https://`) thì Facebook, Zalo, Discord mới hiện ảnh.
+
+## Linh vật, app và P2Game
+
+| Thư mục | Có gì |
+|---|---|
+| `mascots/` | `go-gopher.png`, `dash-flat.png` (Flutter), `sparky-flat.png` (Firebase), bản 2D nền trong suốt |
+| `partners/apps/` | Icon 13 sản phẩm: Scripture, Ahoc, Alife, Hatomic, Arity, Mikademy Pass, Herbal Index, Greeny, Moments, IT Support, Live Fasting, Landlords, Nohost Cloud |
+| `partners/mikademy-logo.png` | Logo Mikademy (đối tác) |
+| `partners/p2game/` | Logo P2Game (icon, chữ màu, chữ trắng) |
+| `badges/info-session-badge.png` | Huy hiệu Info Session |
+
 ## Quy tắc dùng logo
 
 **Được:**
@@ -115,4 +191,4 @@ Tất cả nằm trong `assets/logo/`.
 
 ## Giọng văn
 
-Thân thiện, gần gũi với sinh viên, không sáo rỗng. Xưng "chúng mình" hoặc "CLB", gọi người đọc là "bạn". Slogan chính thức: **New Journey – New Challenges**.
+Thân thiện, gần gũi với sinh viên, không sáo rỗng. Xưng "chúng mình" hoặc "CLB", gọi người đọc là "bạn". Slogan của Runway Club: **New Journey – New Challenges** (viết bằng Maven Pro). Khi nhắc chung hai CLB, gọi là **GDG on Campus HSU × Runway Club**; khi nhắc riêng GDG thì viết đúng tên **GDG on Campus HSU**, không viết GDSC nữa.
