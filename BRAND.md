@@ -22,7 +22,7 @@ Màu Google, dùng cho phần GDG on Campus HSU và các điểm nhấn chung:
 |---|---|
 | Blue | `#4285F4` |
 | Red | `#EA4335` |
-| Yellow | `#FBBC04` |
+| Yellow | `#F9AB00` |
 | Green | `#34A853` |
 
 Dán vào CSS:
@@ -38,7 +38,7 @@ Dán vào CSS:
 
   --google-blue:   #4285f4;
   --google-red:    #ea4335;
-  --google-yellow: #fbbc04;
+  --google-yellow: #f9ab00;
   --google-green:  #34a853;
 
   --text: #1a1a1a;
