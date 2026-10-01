@@ -16,7 +16,7 @@ assets/logo/         Logo Runway, GDG on Campus, Khoa Công nghệ HSU
 assets/icons/ui/     67 icon giao diện (menu, lịch, địa điểm, mũi tên, code, cúp...) dạng SVG
 assets/icons/social/ Icon Facebook, Messenger, Instagram, Discord, GitHub, YouTube, TikTok, Zalo, Gmail
 assets/icons/tech/   Icon công nghệ 1 màu: Flutter, Firebase, Android, Gemini, Google Cloud, HTML, CSS, JS...
-assets/tech-logos/   Logo công nghệ Google bản màu gốc (Flutter, Firebase, Android, Gemini, Cloud, Chrome...)
+assets/tech-logos/   Logo công nghệ Google bản màu gốc (Flutter, Firebase, Android, Gemini, NotebookLM, Cloud, Chrome...)
 assets/mascots/      Linh vật Go gopher, Dash (Flutter), Sparky (Firebase) bản 2D
 assets/partners/     Logo 13 app/sản phẩm của Mikademy và thành viên, logo P2Game
 assets/images/       Ảnh hoạt động CLB + og-cover.jpg (ảnh hiện khi chia sẻ link)

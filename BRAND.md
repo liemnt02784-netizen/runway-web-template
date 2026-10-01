@@ -107,7 +107,7 @@ Icon nằm trong `assets/icons/`, tất cả là SVG một màu dùng `currentCo
 |---|---|---|
 | `icons/ui/` | 67 icon giao diện: menu, close, arrow-right, calendar, clock, place, email, groups, school, code, rocket, trophy, discord-style chat... | Material Design Icons (Google), Apache 2.0 |
 | `icons/social/` | facebook, messenger, instagram, discord, github, youtube, tiktok, zalo, gmail | Simple Icons, CC0 |
-| `icons/tech/` | flutter, dart, firebase, android, kotlin, go, kubernetes, angular, google-cloud, gemini, tensorflow, chrome, html5, css, javascript, typescript, python, git, figma, vercel, netlify | Simple Icons, CC0 |
+| `icons/tech/` | flutter, dart, firebase, android, kotlin, go, kubernetes, angular, google-cloud, gemini, notebooklm, chrome, html5, css, javascript, typescript, python, git, figma, vercel, netlify | Simple Icons, CC0 |
 
 Cách 1, chèn thẳng SVG để đổi màu theo chữ (mở file .svg, copy nội dung dán vào HTML):
 
