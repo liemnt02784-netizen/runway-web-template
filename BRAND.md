@@ -8,7 +8,7 @@ Logo Runway là một dải gradient xanh, chạy từ xanh tím ở trên xuố
 
 | Vai trò | Mã màu | Dùng ở đâu |
 |---|---|---|
-| Xanh Runway đậm | `#426EF0` | Tiêu đề, nút chính, điểm nhấn |
+| Xanh Runway đậm | `#426EF0` | Tiêu đề, nút chính, điểm nhấn. **Chữ "Runway" khi tô màu luôn dùng màu này** |
 | Xanh Runway sáng | `#3FB4FE` | Điểm cuối gradient, hover, highlight |
 | Xanh Hoa Sen | `#0C4DA2` | Khi đặt cạnh logo Khoa Công nghệ |
 | Đỏ Hoa Sen | `#E8112D` | Chỉ dùng rất ít, làm điểm nhấn |
@@ -54,11 +54,11 @@ Gradient của logo đi theo hướng chéo từ trên xuống dưới. Khi làm
 
 ## Font: mỗi CLB một font, dùng chung trên một trang
 
-Trang web giới thiệu **cả hai CLB cùng lúc**, nên giữ font riêng của từng bên:
+Trang web giới thiệu **cả hai CLB cùng lúc**, nên giữ font riêng của từng bên: **GDSC dùng Google Sans, Runway dùng Maven Pro.**
 
 | Thương hiệu | Font | Dùng ở đâu |
 |---|---|---|
-| **GDG on Campus HSU** | **Google Sans** | Khi nói về GDG on Campus HSU |
+| **GDSC / GDG on Campus HSU** | **Google Sans** | Khi nói về GDSC (GDG on Campus HSU) |
 | **Runway Club** | **Maven Pro** | Khi nói về Runway Club, slogan *New Journey – New Challenges* |
 
 Cả hai đều có trên Google Fonts, miễn phí và **đủ dấu tiếng Việt**. Nhúng một lần cho cả hai:
@@ -191,4 +191,4 @@ Khi deploy, đổi đường dẫn `og:image` thành link đầy đủ (bắt đ
 
 ## Giọng văn
 
-Thân thiện, gần gũi với sinh viên, không sáo rỗng. Xưng "chúng mình" hoặc "CLB", gọi người đọc là "bạn". Slogan của Runway Club: **New Journey – New Challenges** (viết bằng Maven Pro). Khi nhắc chung hai CLB, gọi là **GDG on Campus HSU × Runway Club**; khi nhắc riêng GDG thì viết đúng tên **GDG on Campus HSU**, không viết GDSC nữa.
+Thân thiện, gần gũi với sinh viên, không sáo rỗng. Xưng "chúng mình" hoặc "CLB", gọi người đọc là "bạn". Slogan của Runway Club: **New Journey – New Challenges** (viết bằng Maven Pro). Khi nhắc chung hai CLB, gọi là **GDG on Campus HSU × Runway Club**; khi nhắc riêng GDG thì viết **GDG on Campus HSU** (trước đây là GDSC HSU).
