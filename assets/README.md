@@ -49,8 +49,6 @@ Chữ thường, cách nhau bằng dấu gạch ngang, không dấu tiếng Vi�
 - `logo-gdg-campus-hsu.svg`
 - `event-info-session-01.jpg`
 
-Tên file có dấu hoặc khoảng trắng rất dễ vỡ link khi deploy lên GitHub Pages.
-
 ## Lưu ý về dung lượng
 
 Ảnh nên nén dưới 300KB mỗi tấm, ảnh nền dưới 500KB. Ảnh chụp từ máy ảnh thường nặng 5–8MB, tải trang sẽ rất chậm trên 4G.

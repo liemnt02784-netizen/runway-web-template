@@ -162,8 +162,6 @@ Logo công nghệ **bản màu gốc** (để làm mục "Công nghệ chúng m�
 <meta property="og:image" content="assets/images/og-cover.jpg">
 ```
 
-Khi deploy, đổi đường dẫn `og:image` thành link đầy đủ (bắt đầu bằng `https://`) thì Facebook, Zalo, Discord mới hiện ảnh.
-
 ## Linh vật, app và P2Game
 
 | Thư mục | Có gì |
